@@ -35,11 +35,11 @@ def test_pumpkin_spice_enabled_verbose(testdir, pumpkin_spice_tests):
     result.stdout.fnmatch_lines(
         [
             "*::test_passed PASSED 🎃 ",
-            "*::test_failed FAILED 🍠 ",
+            "*::test_failed FAILED ❄️ ",
             "*::test_xfailed XFAIL 🍂 ",
-            "*::test_xpassed XPASS ❄️ ",
-            "*::test_skipped SKIPPED 🥧",
-            "*::test_error ERROR ☕ ",
+            "*::test_xpassed XPASS 🍠 ",
+            "*::test_skipped SKIPPED ☕ ",
+            "*::test_error ERROR 🥧 *",
         ]
     )
 

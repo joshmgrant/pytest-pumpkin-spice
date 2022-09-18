@@ -2,33 +2,33 @@ from pytest_pumpkin_spice import hooks
 
 
 def pytest_pumpkin_spice_passed(config):
-    # SMILING FACE WITH OPEN MOUTH
+    # SMILING JACK-O-LANTERN
     return u"🎃 ", u"PASSED 🎃 "
 
 
 def pytest_pumpkin_spice_failed(config):
-    # FACE WITH OPEN MOUTH AND COLD SWEAT
-    return u"🍠 ", u"FAILED 🍠 "
+    # SNOWFLAKE
+    return u"❄️ ", u"FAILED ❄️ "
 
 
 def pytest_pumpkin_spice_skipped(config):
-    # FACE WITH ROLLING EYES
-    return u"🥧 ", u"SKIPPED 🥧 "
+    # PUMPKIN SPICE LATTE
+    return u"☕ ", u"SKIPPED ☕ "
 
 
 def pytest_pumpkin_spice_error(config):
-    # POUTING FACE
-    return u"☕ ", u"ERROR ☕ "
+    # PUMPKIN PIE
+    return u"🥧", u"ERROR 🥧 "
 
 
 def pytest_pumpkin_spice_xfailed(config):
-    # DISAPPOINTED FACE
+    # FALLING LEAVES
     return u"🍂 ", u"XFAIL 🍂 "
 
 
 def pytest_pumpkin_spice_xpassed(config):
-    # DIZZY FACE
-    return u"❄️ ", u"XPASS ❄️ "
+    # SWEET POTATO
+    return u"🍠 ", u"XPASS 🍠 "
 
 
 def pytest_addhooks(pluginmanager):
@@ -78,5 +78,5 @@ def pytest_addoption(parser):
         "--pumpkin-spice",
         action="store_true",
         default=False,
-        help="Tests, but with added pumpkin spice",
+        help="Tests, but pumpkin spice flavoured",
     )
