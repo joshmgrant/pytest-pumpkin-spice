@@ -47,6 +47,7 @@ def test_pumpkin_spice_enabled_verbose(testdir, pumpkin_spice_tests):
     # as we have at least one failure
     assert result.ret == 1
 
+
 def test_pumpkin_spice_disabled_by_default_non_verbose(testdir, pumpkin_spice_tests):
     # create a temporary pytest test module
     testdir.makepyfile(pumpkin_spice_tests)
